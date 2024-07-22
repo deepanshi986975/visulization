@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Bar</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{background-color: rgb(163, 169, 254);
+        color: white;
+        font-family: "Poppins", sans-serif;
+
+    }
+    .search{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        min-height: 80vh;
+        background-position: center;
+        background-size: cover;
+        width: 90% ;
+        padding: 5%;
+
+    }
+    .search-bar{
+        max-width: 700px;
+        display: flex;
+        background: rgba(255, 255, 255, 0.992);
+        width: 90%;
+        border-radius: 50px;
+        align-items: center;
+        padding: 5px 15px;
+
+    }
+    .search-bar input{
+       background: transparent;
+        flex: 1;
+        border: 0;
+        outline: none;
+        padding:24px 20px;
+        font-size: 20px;
+        color: #171616;
+        
+        
+       
+    }
+    ::placeholder{
+        color:rgb(178, 10, 144) ;
+        padding: 10%;
+        
+    }
+    .search-bar button img{
+       width: 37px;
+       color:rgb(178, 10, 144) ;
+       outline: none;
+       background-color: #f6f6f6;
+       
+       border-radius: 50%;
+        
+    }
+    .search-bar button{
+        border:0;
+        border-color:floralwhite;
+       
+          cursor: pointer;
+
+    }
+    .dropbtn {
+  background-color:  #74064694;
+  color: rgb(8, 8, 8);
+  padding: 30px ;
+  font-size: 20px;
+  border: none;
+  border-radius: 30px;
+ 
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+    
+    
+</style>
+<body>
+    <div class="search">
+       
+       
+          
+       
+        
+   
+            <form action=""class="search-bar">
+                <div class="dropdown">
+                    <button class="dropbtn">Everything ⮟</button>
+                    <div class="dropdown-content">
+                        <a href="#">Everything</a>
+                        <a href="#">Software Development</a>
+                        <a href="#">Web Development</a>
+                        <a href="#">Data Analyst</a>
+                        <a href="#">IT Consultant </a>
+                        <a href="#">Network Administrator</a>
+
+                    </div>
+                </div>
+               
+                
+            <input type="text"   placeholder = "Search Anything..." name="q">
+            <button type="submit"><img src="search1.png"></button>
+            </form>
+         </div>
+       
+         
+        
+        
+</body>
+</html>
